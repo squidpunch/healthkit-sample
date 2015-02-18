@@ -15,4 +15,7 @@ Motion::Project::App.setup do |app|
 
   app.entitlements['com.apple.developer.healthkit'] = true
   app.frameworks += ['HealthKit']
+
+  app.deployment_target = "7.1"
+  app.sdk_version = "8.1"
 end

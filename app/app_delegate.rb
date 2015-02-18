@@ -10,6 +10,8 @@ class AppDelegate
     @window.rootViewController = navigationController
     @window.makeKeyAndVisible
 
+
+    puts HKHealthStore.isHealthDataAvailable
     true
   end
 end

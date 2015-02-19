@@ -11,7 +11,9 @@ class AppDelegate
     @window.makeKeyAndVisible
 
 
-    puts HKHealthStore.isHealthDataAvailable
+    if NSClassFromString("HKHealthStore")
+      puts HKHealthStore.isHealthDataAvailable
+    end
     true
   end
 end
